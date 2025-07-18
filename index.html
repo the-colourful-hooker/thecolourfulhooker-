@@ -3,41 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Colourful Hooker Crochet</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>The Colourful Hooker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+      margin: 0;
+      font-family: 'Fredoka', sans-serif;
+      background: #fff8fc;
+      color: #333;
     }
-    .button-link {
-      transition: transform 0.2s;
+
+    header {
+      background: #fff;
+      text-align: center;
     }
-    .button-link:hover {
+
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+
+    .logo {
+      width: 160px;
+      margin-top: -80px;
+      border-radius: 50%;
+      border: 6px solid white;
+      background: white;
+    }
+
+    h1 {
+      margin-top: 10px;
+      font-size: 2rem;
+      color: #ff5cad;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      gap: 20px;
+    }
+
+    .link-button {
+      padding: 12px 24px;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      width: 80%;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .link-button:hover {
       transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        width: 120px;
+        margin-top: -60px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
-<body class="flex items-center justify-center min-h-screen">
-  <div class="bg-white bg-opacity-80 rounded-3xl shadow-xl p-6 max-w-sm w-full text-center border-4 border-black">
-    <!-- Profile Image -->
-    <img src="logo.png" alt="The Colourful Hooker Logo" class="w-32 h-32 mx-auto rounded-full mb-4 shadow-md">
+<body>
+  <header>
+    <img src="banner.jpg" alt="Banner Image" class="banner" />
+    <img src="logo.jpg" alt="Logo" class="logo" />
+    <h1>the colourful hooker</h1>
+  </header>
 
-    <!-- Title -->
-    <h1 class="text-2xl font-bold text-gray-900">The Colourful Hooker Crochet</h1>
-    <p class="text-sm text-gray-700 mt-1 mb-4">🧶 Handmade with love, colour & creativity 💖</p>
-
-    <!-- Links -->
-    <div class="space-y-4">
-      <a href="https://www.youtube.com/@the_colourful_hooker" target="_blank" class="block bg-black text-white py-3 rounded-full font-semibold button-link shadow">
-        ▶️ YouTube Channel
-      </a>
-      <a href="#" class="block bg-black text-white py-3 rounded-full font-semibold button-link shadow">
-        🛍️ Etsy Shop
-      </a>
-      <a href="#" class="block bg-black text-white py-3 rounded-full font-semibold button-link shadow">
-        💻 Website
-      </a>
-    </div>
-  </div>
+  <section class="links">
+    <a class="link-button" href="#">YouTube</a>
+    <a class="link-button" href="#">Pattern Shop (Coming Soon)</a>
+    <a class="link-button" href="#">Follow on Instagram</a>
+    <a class="link-button" href="#">Email Me (Coming Soon)</a>
+  </section>
 </body>
 </html>
